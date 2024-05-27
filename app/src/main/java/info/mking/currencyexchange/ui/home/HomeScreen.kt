@@ -1,4 +1,4 @@
-package info.mking.currencyexchange.home
+package info.mking.currencyexchange.ui.home
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -19,7 +19,7 @@ fun HomeScreen(viewModel: HomeViewModel = viewModel()) {
 
 @Composable
 fun HomeScreen(uiState: HomeViewModel.UiState) {
-    Column(modifier = Modifier.fillMaxSize()){
+    Column(modifier = Modifier.fillMaxSize()) {
         Text(modifier = Modifier.fillMaxWidth(), text = uiState.title)
     }
 }

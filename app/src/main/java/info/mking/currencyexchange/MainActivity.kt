@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.ui.Modifier
 import dagger.hilt.android.AndroidEntryPoint
-import info.mking.currencyexchange.home.HomeScreen
+import info.mking.currencyexchange.ui.home.HomeScreen
 import info.mking.currencyexchange.ui.theme.CurrencyExchangeTheme
 
 @AndroidEntryPoint

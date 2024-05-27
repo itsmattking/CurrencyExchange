@@ -1,4 +1,4 @@
-package info.mking.currencyexchange.home
+package info.mking.currencyexchange.ui.home
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
