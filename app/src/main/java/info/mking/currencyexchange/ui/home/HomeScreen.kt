@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.compose.LifecycleStartEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import info.mking.currencyexchange.ui.theme.CurrencyExchangeTheme
 
@@ -15,6 +16,12 @@ import info.mking.currencyexchange.ui.theme.CurrencyExchangeTheme
 fun HomeScreen(viewModel: HomeViewModel = viewModel()) {
     val uiState = viewModel.uiState.collectAsState()
     HomeScreen(uiState = uiState.value)
+    LifecycleStartEffect(Unit) {
+        viewModel.initialise()
+        onStopOrDispose {
+
+        }
+    }
 }
 
 @Composable
